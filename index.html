@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Lucci Media | Social Media & Content Strategy Experts — Boston, MA</title>
+  <meta name="description" content="Lucci Media is Boston's #1 beauty marketing agency specializing in social media management, content creation days, branding shoots, and data-driven growth strategy for modern brands.">
+  <meta name="keywords" content="Lucci Media, Beauty Marketing Agency, Social Media Management, Content Creation Boston, Branding Shoots, Content Strategy">
+  <meta name="author" content="Lucci Media">
+  
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucci Media | Social Media & Content Strategy Experts">
+  <meta property="og:description" content="Boston's #1 Beauty Marketing Agency. Building brands that attract and convert through intentional, data-driven content engineered to scale.">
+  <meta property="og:image" content="assets/images/lucci_media_white_branding_-_final-02.png">
+  <meta property="og:url" content="https://luccimedia.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/lucci_media_white_branding_-_final-02.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- GSAP & ScrollTrigger Animation Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor Elements (Desktop Only) -->
+  <div class="custom-cursor" id="cursorDot" aria-hidden="true"></div>
+  <div class="custom-cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- Luxury Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-brand">
+      <img src="assets/images/lucci_media_white_branding_-_final-02.png" alt="Lucci Media" class="preloader-logo">
+      <span class="preloader-tagline">Where Strategy Meets Scale</span>
+    </div>
+    <div class="preloader-bar-wrap">
+      <div class="preloader-bar" id="preloaderBar"></div>
+    </div>
+    <div class="preloader-count" id="preloaderCount">0%</div>
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 1: PREMIUM NAVBAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container-wide nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" aria-label="Lucci Media Home">
+        <img src="assets/images/lucci_media_white_branding_-_final-02.png" alt="Lucci Media Logo" class="nav-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Selected Work</a>
+        <a href="#founder" class="nav-link">Founder</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Action Buttons & Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">
+          <span>Let's Talk</span>
+          <span class="btn-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-links">
+      <a href="#services" class="mobile-nav-link">Services <span>[ 01 ]</span></a>
+      <a href="#about" class="mobile-nav-link">About <span>[ 02 ]</span></a>
+      <a href="#work" class="mobile-nav-link">Selected Work <span>[ 03 ]</span></a>
+      <a href="#founder" class="mobile-nav-link">Meet Founder <span>[ 04 ]</span></a>
+      <a href="#testimonials" class="mobile-nav-link">Client Love <span>[ 05 ]</span></a>
+      <a href="#faq" class="mobile-nav-link">FAQ <span>[ 06 ]</span></a>
+      <a href="#contact" class="mobile-nav-link">Contact <span>[ 07 ]</span></a>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <div class="mobile-contact-item">Boston, MA • lex@luccimedia.com</div>
+      <div class="mobile-social-links">
+        <a href="https://www.instagram.com/luccimedia/" target="_blank" rel="noopener noreferrer" class="mobile-social-link">Instagram</a>
+        <a href="https://stan.store/Luccimedia" target="_blank" rel="noopener noreferrer" class="mobile-social-link">Stan Store</a>
+        <a href="mailto:lex@luccimedia.com" class="mobile-social-link">Email</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 2: HERO SECTION
+         ========================================================================== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Content Column -->
+        <div class="hero-content">
+          <div class="section-tag hero-badge">
+            <span class="section-tag-dot"></span>
+            <span>Boston's #1 Beauty Marketing Agency</span>
+          </div>
+
+          <h1 class="heading-display hero-title">
+            Building Brands That <span class="word-highlight">Attract</span> & Convert.
+          </h1>
+
+          <!-- Dynamic Rotating Statement Banner -->
+          <div class="hero-statement-ribbon">
+            <span class="text-accent">✦</span>
+            <span class="hero-statement-text" id="heroStatement">WHERE STRATEGY MEETS SCALE</span>
+          </div>
+
+          <p class="hero-desc">
+            We elevate brands through intentional, data-driven content engineered to convert. Known for delivering measurable growth in reach, engagement, and performance, we transform passive audiences into loyal, high-value customers.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-gold">
+              <span>Get In Touch With Us</span>
+              <span class="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+            <a href="#work" class="btn btn-outline">
+              <span>Explore Our Work</span>
+            </a>
+          </div>
+
+          <!-- Hero Metric Counters -->
+          <div class="hero-stats-bar">
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">250+</span>
+              <span class="hero-stat-label">Businesses Scaled</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">700+</span>
+              <span class="hero-stat-label">Content Captures</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="hero-stat-number">10+ Yrs</span>
+              <span class="hero-stat-label">Beauty & Social Mastery</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase Composition -->
+        <div class="hero-visual-wrap">
+          <!-- Main Hero Image -->
+          <div class="hero-photo-main">
+            <img src="assets/images/photo_feb_22_2026_12_16_47_pm.jpg" alt="Lucci Media Creative Agency Studio Production" loading="eager">
+          </div>
+
+          <!-- Secondary Overlapping Image -->
+          <div class="hero-photo-secondary">
+            <img src="assets/images/photo_apr_06_2026_12_00_13_pm.jpg" alt="Lucci Media High-Fashion Content Shoot" loading="lazy">
+          </div>
+
+          <!-- Tertiary Accent Image -->
+          <div class="hero-photo-tertiary">
+            <img src="assets/images/dsc00188.jpg" alt="Lucci Media Editorial Brand Visuals" loading="lazy">
+          </div>
+
+          <!-- Floating Glassmorphism Badge -->
+          <div class="hero-glass-badge">
+            <div class="badge-icon">✦</div>
+            <div class="badge-text-group">
+              <div class="badge-text-title">Lucci Media</div>
+              <div class="badge-text-sub">Boston • Worldwide</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: BRAND TRUST & CLIENT LOGO MARQUEE
+         ========================================================================== -->
+    <section class="marquee-section" aria-label="Brands We Have Worked With">
+      <div class="container marquee-header">
+        <div class="section-tag">
+          <span class="section-tag-dot"></span>
+          <span>Logos We Have Created & Elevated Brands</span>
+        </div>
+      </div>
+
+      <div class="marquee-container">
+        <!-- Track 1 -->
+        <div class="marquee-track">
+          <div class="client-logo-item" title="Brown Sugar Skin">
+            <img src="assets/images/brown_sugar_skin.png" alt="Brown Sugar Skin">
+          </div>
+          <div class="client-logo-item" title="The Sculpted Spa">
+            <img src="assets/images/the_sculpted_spa.png" alt="The Sculpted Spa">
+          </div>
+          <div class="client-logo-item" title="Kay Skn">
+            <img src="assets/images/kay_skn.png" alt="Kay Skn">
+          </div>
+          <div class="client-logo-item" title="SBS">
+            <img src="assets/images/sbs.png" alt="SBS">
+          </div>
+          <div class="client-logo-item" title="Beyond Beauty">
+            <img src="assets/images/beyond_beauty_logo_white.png" alt="Beyond Beauty">
+          </div>
+          <div class="client-logo-item" title="Laser & Spa">
+            <img src="assets/images/laser_and_spa_logo_white.png" alt="Laser & Spa">
+          </div>
+          <div class="client-logo-item" title="R Method">
+            <img src="assets/images/r_method_logo_white.png" alt="R Method">
+          </div>
+          <div class="client-logo-item" title="Solydified">
+            <img src="assets/images/solydified_logo_white.png" alt="Solydified">
+          </div>
+        </div>
+
+        <!-- Track 2 (Duplicate for Seamless Infinite Scroll) -->
+        <div class="marquee-track" aria-hidden="true">
+          <div class="client-logo-item" title="Brown Sugar Skin">
+            <img src="assets/images/brown_sugar_skin.png" alt="Brown Sugar Skin">
+          </div>
+          <div class="client-logo-item" title="The Sculpted Spa">
+            <img src="assets/images/the_sculpted_spa.png" alt="The Sculpted Spa">
+          </div>
+          <div class="client-logo-item" title="Kay Skn">
+            <img src="assets/images/kay_skn.png" alt="Kay Skn">
+          </div>
+          <div class="client-logo-item" title="SBS">
+            <img src="assets/images/sbs.png" alt="SBS">
+          </div>
+          <div class="client-logo-item" title="Beyond Beauty">
+            <img src="assets/images/beyond_beauty_logo_white.png" alt="Beyond Beauty">
+          </div>
+          <div class="client-logo-item" title="Laser & Spa">
+            <img src="assets/images/laser_and_spa_logo_white.png" alt="Laser & Spa">
+          </div>
+          <div class="client-logo-item" title="R Method">
+            <img src="assets/images/r_method_logo_white.png" alt="R Method">
+          </div>
+          <div class="client-logo-item" title="Solydified">
+            <img src="assets/images/solydified_logo_white.png" alt="Solydified">
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondary Subtle Text Ticker Ribbon -->
+      <div class="text-ticker-ribbon">
+        <div class="text-ticker-track">
+          <span class="ticker-item">Trusted by 250+ Businesses</span>
+          <span class="ticker-item">Social Media Management</span>
+          <span class="ticker-item">High-Impact Content Days</span>
+          <span class="ticker-item">Custom Brand Kits</span>
+          <span class="ticker-item">Boston's #1 Beauty Marketing Agency</span>
+          <span class="ticker-item">Measurable ROI & Audience Growth</span>
+          <span class="ticker-item">Trusted by 250+ Businesses</span>
+          <span class="ticker-item">Social Media Management</span>
+          <span class="ticker-item">High-Impact Content Days</span>
+          <span class="ticker-item">Custom Brand Kits</span>
+          <span class="ticker-item">Boston's #1 Beauty Marketing Agency</span>
+          <span class="ticker-item">Measurable ROI & Audience Growth</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: ABOUT / INTRODUCTION (EDITORIAL SHOWCASE)
+         ========================================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        
+        <!-- Left Column: Asymmetrical Photos -->
+        <div class="about-images-composition">
+          <div class="about-photo-card about-photo-1">
+            <img src="assets/images/img_9733.jpg" alt="Lucci Media Content Strategy Studio" loading="lazy">
+          </div>
+          <div class="about-photo-card about-photo-2">
+            <img src="assets/images/photo-2026-04-08-14-48-56.jpg" alt="Lucci Media Aesthetics & Direction" loading="lazy">
+          </div>
+
+          <!-- Rotating Decorative Badge -->
+          <div class="about-stamp" aria-hidden="true">
+            <svg viewBox="0 0 100 100">
+              <path id="curve" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent"/>
+              <text font-size="10.5" font-family="Space Mono, monospace" letter-spacing="2.2" fill="#c5a880">
+                <textPath xlink:href="#curve">
+                  LUCCI MEDIA • STRATEGY MEETS SCALE •
+                </textPath>
+              </text>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Right Column: Editorial Copy & Pillars -->
+        <div class="about-content">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Welcome to Lucci Media</span>
+          </div>
+
+          <h2 class="heading-lg about-headline">
+            If you’re ready to scale, you’re in the right place.
+          </h2>
+
+          <p class="text-lead about-lead">
+            Welcome to Lucci Media — where strategy meets scale! We elevate brands through intentional, data-driven content engineered to convert. Known for delivering measurable growth in reach, engagement, and performance, we transform passive audiences into loyal, high-value customers.
+          </p>
+
+          <!-- 4 Strategic Pillars -->
+          <div class="about-pillars-grid">
+            <div class="pillar-item">
+              <span class="pillar-num">[ 01 ]</span>
+              <h3 class="pillar-title">Engineered Content</h3>
+              <p class="pillar-desc">Not just posting to post. Every visual and caption is structured to attract and convert.</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">[ 02 ]</span>
+              <h3 class="pillar-title">Hands-Off Scale</h3>
+              <p class="pillar-desc">Let us handle the day-to-day while you focus on serving clients and growing your empire.</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">[ 03 ]</span>
+              <h3 class="pillar-title">Visual Eminence</h3>
+              <p class="pillar-desc">High-fashion aesthetics, custom shot lists, and cohesive feeds that command premium prices.</p>
+            </div>
+            <div class="pillar-item">
+              <span class="pillar-num">[ 04 ]</span>
+              <h3 class="pillar-title">Measurable Growth</h3>
+              <p class="pillar-desc">Monthly analytics, SEO-optimized captions, and strategies that boost bookings and waitlists.</p>
+            </div>
+          </div>
+
+          <div>
+            <a href="#services" class="btn btn-outline">
+              <span>View All Signature Services</span>
+              <span class="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: SIGNATURE SERVICES
+         ========================================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        
+        <div class="services-header">
+          <div class="services-header-left">
+            <div class="section-tag">
+              <span class="section-tag-dot"></span>
+              <span>Our Signature Services</span>
+            </div>
+            <h2 class="heading-lg">
+              Engineered For Impact. Crafted For Scale.
+            </h2>
+          </div>
+          <div class="services-header-right">
+            <span class="text-muted" style="font-family: var(--font-mono); font-size: 0.85rem;">[ 09 SERVICES OFFERED ]</span>
+          </div>
+        </div>
+
+        <!-- 9 Authentic Services Grid -->
+        <div class="services-grid">
+
+          <!-- Service 1: Social Media Management -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 01 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Social Media Management</h3>
+              <p class="service-card-desc">Let us handle the day-to-day while you focus on your business! Complete management tailored for high-ticket growth.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Content creation & scheduling</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Captions with SEO optimization</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Engagement & community building</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Feed design & planning</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Monthly analytics & performance reports</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: Content Days -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 02 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <circle cx="12" cy="13" r="4"></circle>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Content Days</h3>
+              <p class="service-card-desc">Bring your brand to life with professional, high-quality content. Perfect for creating fresh visuals to keep your feed engaging.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Customized shot lists tailored to your brand</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>High-resolution photos and/or videos</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Full-service editing & delivery</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Includes product and service-focused content</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: Branding Shoots -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 03 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Branding Shoots</h3>
+              <p class="service-card-desc">Your brand deserves a bold, professional image. Perfect for personal branding, rebranding, or creating executive content for your business.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Professional photography tailored to aesthetic</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Studio or on-location options in Boston & beyond</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Posing guidance & high-confidence coaching</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Hundreds of delivered assets for lifetime use</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4: Campaign Shoots -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 04 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Campaign Shoots</h3>
+              <p class="service-card-desc">Capture your brand’s story with stunning visuals that stand out. Tailored concepts for product launches, seasonal collections, or VIP events.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Professional photography and/or videography</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Studio or on-location production</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Tailored concepts for product launches</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Commercial usage rights & full edits</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 5: Trending Socials Package -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 05 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                    <polyline points="17 6 23 6 23 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Trending Socials Package</h3>
+              <p class="service-card-desc">Stay ahead of the curve with our Trending Socials Package. Perfect for businesses wanting to tap into the latest trends without the stress!</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>5-12 reels tailored to your niche</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Script writing & trending audio integration</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Engaging captions & hashtags</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Delivered fully edited and ready to post</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 6: Brand Kits -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 06 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="M2 2l7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Brand Kits</h3>
+              <p class="service-card-desc">Set the foundation for a cohesive and professional brand identity with our customized brand kits.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Logo design (primary and secondary)</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Color palette and typography curation</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Brand guidelines for consistent messaging</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Social media asset suite & templates</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 7: Content Strategy -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 07 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Content Strategy</h3>
+              <p class="service-card-desc">Let’s build a clear plan behind your content so you’re not just posting to post. Engineered for conversion and authority.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Brand and offer positioning</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Content pillars tailored to your business</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Feed direction + messaging guidance</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Growth and engagement recommendations</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Action steps designed to help you convert</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 8: Business Consulting -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 08 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Business Consulting</h3>
+              <p class="service-card-desc">Ready to level up your strategy? Get personalized 1-on-1 advice from Lex Luciano to grow your brand online.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Instagram & TikTok audits</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Growth strategies for social media</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Branding & content planning guidance</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Expert tips to attract high-ticket clients</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 9: Web Design & Graphics -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-top">
+                <span class="service-index">[ 09 ]</span>
+                <div class="service-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="service-card-title">Web Design & Graphics</h3>
+              <p class="service-card-desc">Your digital storefront should be as stunning as your business! Sleek, user-friendly websites and graphic assets optimized for conversions.</p>
+              <div class="service-features-list">
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Custom web design tailored to your branding</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Mobile optimization & e-commerce setup</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>1-on-1 review and revisions included</span>
+                </div>
+                <div class="service-feature-item">
+                  <span class="service-feature-bullet">✦</span>
+                  <span>Social flyers, business cards & campaign graphics</span>
+                </div>
+              </div>
+            </div>
+            <div class="service-card-footer">
+              <a href="#contact" class="service-card-link">
+                <span>Inquire Service</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: SELECTED WORK / PORTFOLIO (EDITORIAL GALLERY)
+         ========================================================================== -->
+    <section class="section portfolio-section" id="work">
+      <div class="container">
+        
+        <div class="portfolio-header">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Our Gallery — Behind The Scenes</span>
+          </div>
+          <h2 class="heading-lg">
+            Visual Excellence In Motion
+          </h2>
+          <p class="text-lead" style="max-width: 600px; margin-top: 1rem;">
+            A curated portfolio of branding shoots, campaign visuals, and client transformations captured by Lucci Media.
+          </p>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="portfolio-filter-tabs">
+            <button class="filter-tab is-active" data-filter="all">All Work</button>
+            <button class="filter-tab" data-filter="branding">Branding Shoots</button>
+            <button class="filter-tab" data-filter="campaigns">Campaign Shoots</button>
+            <button class="filter-tab" data-filter="content-days">Content Days</button>
+          </div>
+        </div>
+
+        <!-- Editorial Masonry Grid of Actual Lucci Media Photography -->
+        <div class="portfolio-grid">
+
+          <!-- Item 1: Tall Editorial Portrait -->
+          <div class="portfolio-item tall" data-category="branding all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/photo_feb_18_2026_12_22_04_pm.jpg" alt="Lucci Media Luxury Brand Shoot" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Branding Shoot</span>
+                <h4 class="portfolio-title">Luxury Studio Portraiture</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Regular Editorial Detail -->
+          <div class="portfolio-item regular" data-category="campaigns all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/photo_nov_11_2025_2_01_37_pm.jpg" alt="Lucci Media Campaign Shoot" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Campaign Shoot</span>
+                <h4 class="portfolio-title">Beauty & Glow Direction</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Regular Behind The Scenes -->
+          <div class="portfolio-item regular" data-category="content-days all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/photo_dec_13_2025_4_01_47_pm.jpg" alt="Lucci Media Content Day Shoot" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Content Day</span>
+                <h4 class="portfolio-title">Live Studio Capture</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Wide Aesthetic Flatlay -->
+          <div class="portfolio-item wide" data-category="campaigns all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/img_9010.jpg" alt="Lucci Media Aesthetic Flatlay" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Brand Campaign</span>
+                <h4 class="portfolio-title">Product & Lifestyle Curation</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: High Fashion Editorial -->
+          <div class="portfolio-item regular" data-category="branding all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/dsc01254.jpg" alt="Lucci Media High Fashion Shoot" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Branding Shoot</span>
+                <h4 class="portfolio-title">High Fashion Signature</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6: Content Day in Action -->
+          <div class="portfolio-item regular" data-category="content-days all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/photo_apr_01_2026_12_45_51_pm.jpg" alt="Lucci Media Content Production" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Content Day</span>
+                <h4 class="portfolio-title">On-Location Production</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7: Executive Brand Shoot -->
+          <div class="portfolio-item regular" data-category="branding all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/photo_oct_29_2025_12_32_54_pm.jpg" alt="Lucci Media Executive Brand Shoot" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Branding Shoot</span>
+                <h4 class="portfolio-title">Executive Presence</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8: Dynamic Campaign Angle -->
+          <div class="portfolio-item regular" data-category="campaigns all">
+            <div class="portfolio-item-inner">
+              <img src="assets/images/img_8963.jpg" alt="Lucci Media Campaign Model Direction" loading="lazy">
+              <div class="portfolio-overlay">
+                <span class="portfolio-cat">Campaign Shoot</span>
+                <h4 class="portfolio-title">Model & Styling Direction</h4>
+              </div>
+              <div class="portfolio-zoom-btn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: FOUNDER INTRODUCTION (LEX LUCIANO)
+         ========================================================================== -->
+    <section class="section founder-section" id="founder">
+      <div class="container founder-grid">
+        
+        <!-- Founder Portrait Column -->
+        <div class="founder-image-wrapper">
+          <img src="assets/images/photo_apr_06_2026_3_35_54_pm.jpg" alt="Lex Luciano — Founder of Lucci Media" loading="lazy">
+          
+          <!-- Secondary Candid Badge -->
+          <div class="founder-candid-badge" aria-hidden="true">
+            <img src="assets/images/d74dbbc8-67e6-4777-a8ec-125ac6221d4e.jpg" alt="Lex Luciano Candids">
+          </div>
+        </div>
+
+        <!-- Founder Story Column -->
+        <div class="founder-content">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Meet Our Founder</span>
+          </div>
+
+          <div class="founder-name-group">
+            <span class="founder-title-eyebrow">Visionary & Founder</span>
+            <h2 class="founder-name">Lex Luciano</h2>
+            <span class="founder-role-tag">FOUNDER | @LUCCIMEDIA</span>
+          </div>
+
+          <div class="founder-bio">
+            <p>
+              Hello! I’m <strong>Lex Luciano</strong>, the founder and visionary behind Lucci Media. With over a decade of experience in the beauty and social media industries, I’ve combined my passion for creativity, branding, and strategy to help businesses elevate their online presence.
+            </p>
+            <p>
+              My journey began as a MAC makeup artist and licensed esthetician, where I honed my skills in enhancing beauty and building client trust. Over time, my expertise evolved into the digital space, working with globally recognized brands and growing my platforms organically.
+            </p>
+            <p>
+              At Lucci Media, I specialize in crafting innovative strategies, designing standout visuals, and managing social media for entrepreneurs and businesses looking to make a lasting impact. My goal is to help clients connect authentically with their audience, build their brand, and achieve measurable growth.
+            </p>
+          </div>
+
+          <!-- Personal Mission Quote -->
+          <div class="founder-quote-box">
+            <p class="founder-quote-text">
+              “When I’m not leading Lucci Media, I’m a mom and creator who thrives on balancing family life with entrepreneurial ambitions. I’m passionate about delivering exceptional results and empowering businesses to look and feel their best—online and beyond. Let’s work together to take your brand to the next level. Your vision deserves nothing less than excellence!”
+            </p>
+          </div>
+
+          <div class="founder-actions">
+            <a href="https://www.instagram.com/luccimedia/" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+              <span>Follow @LucciMedia</span>
+              <span class="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Book A Consultation</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8: CLIENT TESTIMONIALS ("CLIENT LOVE")
+         ========================================================================== -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        
+        <div class="testimonials-header">
+          <div>
+            <div class="section-tag">
+              <span class="section-tag-dot"></span>
+              <span>Client Love & Reviews</span>
+            </div>
+            <h2 class="heading-lg">
+              Words From The Brands We Elevate
+            </h2>
+          </div>
+
+          <!-- Carousel Arrow Buttons -->
+          <div class="testimonials-nav-controls">
+            <button class="testimonial-nav-btn" id="prevTestimonial" aria-label="Previous Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="testimonial-nav-btn" id="nextTestimonial" aria-label="Next Testimonial">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Testimonials Carousel Viewport -->
+        <div class="testimonials-carousel-viewport">
+          <div class="testimonials-track" id="testimonialsTrack">
+
+            <!-- Testimonial 1: Katherine -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “I wanted to let you know that working with you has been the best thing I ever did. It was so important to me to find someone to grow with and that aligned to my vision, you're that and more. We've been working together for 3 weeks now and I've been able to surpass my goal with my waitlist for my future classes. Also, my bookings have gone up. I booked 30 new clients in the matter of 2 weeks!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/client_1.jpg" alt="Katherine, Kat Beauty Co">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Katherine</h4>
+                  <span class="testimonial-author-company">Kat Beauty Co</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2: Andrea -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “I’m currently on my third project with Lucci Media, and the consistency speaks for itself! She is the best!! She captures the right angles, picks the best tone, creates amazing reels, and the best part is she’s efficient and gets things done! She’s also such a sweet soul and a hard working mama. I am so excited for our future projects together.”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/client_2.jpg" alt="Andrea, Serenity Beauty Boston">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Andrea</h4>
+                  <span class="testimonial-author-company">Serenity Beauty Boston</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3: Sheranny -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “For the last couple of months, I've been working on my rebrand with Lucci Media I can't boast enough about how much of a pleasure it's been to work with her & the energy she brings. Lex got the vision & has executed meticulously. Beyond my expectation actually. Looking forward to our continued growth!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/client_3.jpg" alt="Sheranny, Brown Sugar Skin">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Sheranny</h4>
+                  <span class="testimonial-author-company">Brown Sugar Skin</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 4: Marisela -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Working with Luccimedia was an absolute dream! From the brand kit to my photoshoot and website, Lex brought my entire vision to life so effortlessly. Her style is impeccable, she just knew exactly what I wanted and how I wanted it without me having to say much. Lex was always communicative and kept me updated throughout every step!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/client_5.jpg" alt="Marisela, OH LA GLAMY">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Marisela</h4>
+                  <span class="testimonial-author-company">OH LA GLAMY</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 5: Matthew -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “I’ve had the absolute pleasure of working with Lexi and Lucci Media on several occasions for content creation days and business branding photo shoots, and every experience has been nothing short of amazing. Lexi has an incredible eye for aesthetics and such a natural talent for capturing the essence of a brand. She is a true game-changer!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/photo-2026-03-31-00-15-27.jpg" alt="Matthew, Matthew James Skin Spa">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Matthew</h4>
+                  <span class="testimonial-author-company">Matthew James Skin Spa</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 6: Raschel -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “I can’t say enough great things about Lex | Lucci Media and the process of my brand photo shoot. Not only did she help with posing, angles and even with the way I should smile but she made me feel so much more confident. She was able to capture 700+ pictures and thanks to her I now have a lifetime of images for my business!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/img_7271.jpg" alt="Raschel, R METHOD">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Raschel</h4>
+                  <span class="testimonial-author-company">R METHOD</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 7: Alyssa -->
+            <div class="testimonial-card">
+              <div class="testimonial-stars">★★★★★</div>
+              <p class="testimonial-quote">
+                “Obsessed is an understatement. As a fellow female business owner who prioritizes client experience, it goes a long way. After such positive experiences, I decided to bring her on for a year's worth of content by joining her Inner Circle Membership for 2026. It still feels like my voice- just with the Lucci Media high-end touch!”
+              </p>
+              <div class="testimonial-author-wrap">
+                <div class="testimonial-avatar">
+                  <img src="assets/images/photo_oct_29_2025_11_57_15_am.jpg" alt="Alyssa, Dosed Rx">
+                </div>
+                <div>
+                  <h4 class="testimonial-author-name">Alyssa</h4>
+                  <span class="testimonial-author-company">Dosed Rx</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="testimonials-dots" id="testimonialsDots"></div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 9: MOST ASKED QUESTIONS (FAQ)
+         ========================================================================== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        
+        <div class="faq-header">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Frequently Asked Questions</span>
+          </div>
+          <h2 class="heading-lg">
+            Most Asked Questions
+          </h2>
+          <p class="text-lead" style="margin-top: 0.75rem;">
+            Everything you need to know about working with Lucci Media, our strategy, and our services.
+          </p>
+
+          <!-- FAQ Filter Tabs -->
+          <div class="faq-filter-tabs">
+            <button class="faq-tab-btn is-active" data-faq-tab="all">All FAQs</button>
+            <button class="faq-tab-btn" data-faq-tab="general">General FAQ</button>
+            <button class="faq-tab-btn" data-faq-tab="strategy">Content Strategy</button>
+            <button class="faq-tab-btn" data-faq-tab="working">Working With Us</button>
+          </div>
+        </div>
+
+        <!-- Accordion List -->
+        <div class="faq-accordion-list">
+
+          <!-- FAQ 1 -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">What services does Lucci Media offer?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Lucci Media specializes in social media management, content creation, branding strategy, and high-quality video production. We help businesses build a strong online presence, create engaging content, and grow their audience.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">Who do you work with?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                We primarily work with beauty, wellness, and lifestyle brands, but we’re open to working with businesses in other industries that align with our expertise.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">Do you offer one-time content creation services, or is it only monthly management?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Yes! We offer one-time content days, where we capture high-quality video and photo content for your brand. We also provide ongoing social media management for businesses that need consistent content and strategy.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">How do I know which package is right for me?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                It depends on your business goals! If you need full social media management, our monthly packages are ideal. If you just need content for your team to post, our content creation services may be a better fit. Book a consultation, and we’ll help you choose the best option.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item" data-category="general">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">What’s the difference between content creation and social media management?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Content creation involves filming, editing, and providing high-quality visuals for your brand. Social media management includes content creation plus strategy, scheduling, posting, engagement, and growth efforts.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item" data-category="strategy">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">How far in advance do you plan content?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                We typically plan content one month in advance, but we also adjust strategies based on trends and analytics to ensure the best results.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item" data-category="strategy">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">Can you help me grow my Instagram or TikTok?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Yes! Our services include growth strategies, content optimization, and engagement techniques tailored to help increase your brand’s reach and visibility.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item" data-category="strategy">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">Do you provide captions and hashtags?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Yes! We craft SEO-optimized captions and research industry-specific hashtags to maximize engagement and visibility.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 9 -->
+          <div class="faq-item" data-category="strategy">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">Will I have full access to my accounts?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Yes! We work collaboratively with our clients. You will always have full control and access to your social media accounts.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 10 -->
+          <div class="faq-item" data-category="working">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">What happens after I book as a management client?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Once you book, we’ll have a strategy call to discuss your goals and brand vision. From there, we’ll create a custom plan, schedule your content shoot (if needed), and begin implementing strategies.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 11 -->
+          <div class="faq-item" data-category="working">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">How long does it take to see results?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Results depend on factors like consistency, industry, and audience engagement. Typically, clients see noticeable improvements in engagement and follower growth within 3-6 months.
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 12 -->
+          <div class="faq-item" data-category="working">
+            <button class="faq-question-btn">
+              <span class="faq-question-text">How do I get started?</span>
+              <span class="faq-icon-indicator">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <div class="faq-answer-content">
+                Simply book a consultation through our website or send us an inquiry! We’ll discuss your goals and recommend the best package for your business.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 10: CONTACT & FINAL CTA
+         ========================================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        
+        <!-- Left: Brand Contact Details -->
+        <div class="contact-info-col">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Get In Touch With Us</span>
+          </div>
+
+          <h2 class="heading-lg contact-title">
+            Ready To Elevate Your Socials With Lucci Media?
+          </h2>
+
+          <p class="contact-subtext">
+            Let’s bring your brand’s vision to life! Inquire today to book a signature service, schedule a content shoot, or explore bespoke social media management.
+          </p>
+
+          <div class="contact-details-cards">
+            
+            <a href="mailto:lex@luccimedia.com" class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <span class="channel-label">Direct Email</span>
+                <span class="channel-val">lex@luccimedia.com</span>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/luccimedia/" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <div>
+                <span class="channel-label">Instagram</span>
+                <span class="channel-val">@luccimedia</span>
+              </div>
+            </a>
+
+            <a href="https://stan.store/Luccimedia" target="_blank" rel="noopener noreferrer" class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+              </div>
+              <div>
+                <span class="channel-label">Shop & Templates</span>
+                <span class="channel-val">stan.store/Luccimedia</span>
+              </div>
+            </div>
+
+            <div class="contact-channel-card">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <span class="channel-label">Location</span>
+                <span class="channel-val">Boston, Massachusetts</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Inquiry Form Container -->
+        <div class="contact-form-wrap">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="name@business.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="instagram" class="form-label">Instagram Handle / Website</label>
+                <input type="text" id="instagram" name="instagram" class="form-input" placeholder="@yourbrand">
+              </div>
+              <div class="form-group">
+                <label for="service" class="form-label">Service Interested In *</label>
+                <select id="service" name="service" class="form-select" required>
+                  <option value="" disabled selected>Select a signature service</option>
+                  <option value="Social Media Management">Social Media Management</option>
+                  <option value="Content Days">Content Days</option>
+                  <option value="Branding Shoots">Branding Shoots</option>
+                  <option value="Campaign Shoots">Campaign Shoots</option>
+                  <option value="Trending Socials Package">Trending Socials Package</option>
+                  <option value="Brand Kits">Brand Kits & Visual Identity</option>
+                  <option value="Content Strategy">Content Strategy & Direction</option>
+                  <option value="Business Consulting">Business Consulting (1-on-1)</option>
+                  <option value="Web Design & Graphics">Web Design & Graphic Design</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Tell Us About Your Brand & Goals *</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="What are your goals, current challenges, and desired launch dates?" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Send Your Inquiry</span>
+              <span class="btn-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </span>
+            </button>
+
+            <div class="form-status" id="formStatus" role="alert"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 11: FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-top-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#hero" aria-label="Lucci Media">
+            <img src="assets/images/lucci_media_white_branding_-_final-02.png" alt="Lucci Media" class="footer-logo-img">
+          </a>
+          <p class="footer-desc">
+            Helping businesses build a strong online presence, create engaging content, and turn passive audiences into loyal customers.
+          </p>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-gold);">
+            Boston's #1 Beauty Marketing Agency
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Signature Services</a></li>
+            <li><a href="#about" class="footer-link">About Lucci Media</a></li>
+            <li><a href="#work" class="footer-link">Selected Work</a></li>
+            <li><a href="#founder" class="footer-link">Meet The Founder</a></li>
+            <li><a href="#testimonials" class="footer-link">Client Reviews</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Signature Services -->
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" class="footer-link">Social Media Management</a></li>
+            <li><a href="#services" class="footer-link">Content Days</a></li>
+            <li><a href="#services" class="footer-link">Branding Shoots</a></li>
+            <li><a href="#services" class="footer-link">Campaign Shoots</a></li>
+            <li><a href="#services" class="footer-link">Trending Socials</a></li>
+            <li><a href="#services" class="footer-link">Brand Kits & Web Design</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Connect -->
+        <div>
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-links-list">
+            <li><a href="mailto:lex@luccimedia.com" class="footer-link">lex@luccimedia.com</a></li>
+            <li><a href="https://www.instagram.com/luccimedia/" target="_blank" rel="noopener noreferrer" class="footer-link">Instagram (@luccimedia)</a></li>
+            <li><a href="https://stan.store/Luccimedia" target="_blank" rel="noopener noreferrer" class="footer-link">Stan Store (Shop)</a></li>
+            <li><span class="footer-link" style="color: var(--text-muted);">Boston, Massachusetts</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copy">
+          COPYRIGHT &copy; 2026 LUCCI MEDIA &bull; ALL RIGHTS RESERVED
+        </div>
+        <div>
+          <button class="footer-back-to-top" id="backToTop" aria-label="Back to Top">
+            <span>Back To Top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Fullscreen Portfolio Viewing -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightboxImg">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
