@@ -15,50 +15,50 @@
   --bg-elevated: #222222;
   --bg-light: #f5f1ec;
   --bg-light-muted: #e9e3da;
-  
+
   --text-primary: #f5f1ec;
   --text-secondary: #a3a099;
   --text-muted: #6b6964;
   --text-dark: #121212;
   --text-dark-muted: #4a4844;
-  
+
   --accent-gold: #c5a880;
   --accent-gold-light: #dfc9a8;
   --accent-olive: #8f8068;
   --accent-taupe: #5c5e4f;
   --accent-glow: rgba(197, 168, 128, 0.25);
-  
+
   --border-subtle: rgba(245, 241, 236, 0.08);
   --border-medium: rgba(245, 241, 236, 0.16);
   --border-accent: rgba(197, 168, 128, 0.35);
   --border-dark: rgba(18, 18, 18, 0.12);
-  
+
   /* Typography */
   --font-display: 'Syne', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'Space Mono', 'Lekton', monospace;
-  
+
   /* Layout & Spacing */
   --container-max: 1360px;
   --container-wide: 1540px;
   --container-padding: clamp(1.25rem, 4vw, 3rem);
-  --section-padding: clamp(5rem, 10vw, 9rem);
-  --section-padding-sm: clamp(3rem, 6vw, 5rem);
-  
+  --section-padding: clamp(3.5rem, 5.5vw, 5.25rem);
+  --section-padding-sm: clamp(2.5rem, 4vw, 3.5rem);
+
   /* Transitions & Curves */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --transition-fast: 0.25s var(--ease-out-expo);
   --transition-medium: 0.45s var(--ease-out-expo);
   --transition-slow: 0.75s var(--ease-out-expo);
-  
+
   /* Radii */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 9999px;
-  
+
   /* Header Height */
   --nav-height: 84px;
 }
@@ -66,7 +66,9 @@
 /* --------------------------------------------------------------------------
    2. RESET & BASE STYLES
    -------------------------------------------------------------------------- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -97,7 +99,10 @@ body {
   color: var(--bg-primary);
 }
 
-img, picture, svg, video {
+img,
+picture,
+svg,
+video {
   display: block;
   max-width: 100%;
 }
@@ -108,7 +113,10 @@ a {
   transition: color var(--transition-fast);
 }
 
-button, input, textarea, select {
+button,
+input,
+textarea,
+select {
   font: inherit;
   color: inherit;
   background: none;
@@ -120,7 +128,8 @@ button {
   cursor: pointer;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -163,7 +172,9 @@ ul, ol {
   border-color: var(--accent-gold);
 }
 
-@media (pointer: coarse), (hover: none) {
+@media (pointer: coarse),
+(hover: none) {
+
   .custom-cursor,
   .custom-cursor-follower {
     display: none !important;
@@ -651,15 +662,15 @@ ul, ol {
    -------------------------------------------------------------------------- */
 .hero {
   min-height: 100vh;
-  padding-top: calc(var(--nav-height) + 3rem);
-  padding-bottom: 4rem;
+  padding-top: calc(var(--nav-height) + 1.5rem);
+  padding-bottom: 2.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   background: radial-gradient(circle at 80% 20%, rgba(197, 168, 128, 0.08) 0%, transparent 60%),
-              radial-gradient(circle at 10% 80%, rgba(92, 94, 79, 0.12) 0%, transparent 50%),
-              var(--bg-primary);
+    radial-gradient(circle at 10% 80%, rgba(92, 94, 79, 0.12) 0%, transparent 50%),
+    var(--bg-primary);
 }
 
 .hero-grid {
@@ -723,7 +734,7 @@ ul, ol {
   font-size: clamp(1.05rem, 1.4vw, 1.25rem);
   line-height: 1.7;
   color: var(--text-secondary);
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem;
   max-width: 580px;
 }
 
@@ -732,7 +743,7 @@ ul, ol {
   flex-wrap: wrap;
   align-items: center;
   gap: 1.25rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.25rem;
 }
 
 /* Hero Stat Counters Bar */
@@ -740,7 +751,7 @@ ul, ol {
   display: grid;
   grid-template-columns: repeat(3, auto);
   gap: clamp(1.5rem, 3.5vw, 3rem);
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--border-subtle);
   width: 100%;
 }
@@ -880,8 +891,15 @@ ul, ol {
 }
 
 @keyframes floatBadge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .badge-icon {
@@ -915,7 +933,7 @@ ul, ol {
    8. SECTION 3: BRAND TRUST & CLIENT LOGO MARQUEE
    -------------------------------------------------------------------------- */
 .marquee-section {
-  padding: 3.5rem 0;
+  padding: 2.25rem 0;
   background-color: #080808;
   border-top: 1px solid var(--border-subtle);
   border-bottom: 1px solid var(--border-subtle);
@@ -955,8 +973,13 @@ ul, ol {
 }
 
 @keyframes marqueeScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .client-logo-item {
@@ -1001,8 +1024,13 @@ ul, ol {
 }
 
 @keyframes textTicker {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .ticker-item {
@@ -1092,8 +1120,13 @@ ul, ol {
 }
 
 @keyframes rotateStamp {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .about-stamp svg {
@@ -1173,7 +1206,7 @@ ul, ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -1216,8 +1249,17 @@ ul, ol {
 }
 
 @keyframes pulseDot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.8); }
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
 }
 
 /* Continuous Typography Scrolling Ribbon (The Social Agency Style) */
@@ -1250,8 +1292,13 @@ ul, ol {
 }
 
 @keyframes servicesMarqueeScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .services-marquee-track .marquee-item {
@@ -1586,7 +1633,8 @@ ul, ol {
   color: var(--accent-gold);
 }
 
-@media (pointer: coarse), (hover: none) {
+@media (pointer: coarse),
+(hover: none) {
   .service-floating-preview {
     display: none !important;
   }
@@ -1597,18 +1645,18 @@ ul, ol {
     grid-template-columns: 140px 1fr auto;
     padding: 1.75rem 1rem;
   }
-  
+
   .service-item-header:hover,
   .service-editorial-item.is-open .service-item-header {
     padding-left: 1rem;
   }
-  
+
   .service-details-inner {
     grid-template-columns: 1fr;
     gap: 2.5rem;
     padding: 1rem 1rem 2.5rem;
   }
-  
+
   .service-detail-image-card {
     height: 300px;
   }
@@ -1619,22 +1667,22 @@ ul, ol {
     grid-template-columns: 1fr auto;
     gap: 1rem;
   }
-  
+
   .service-item-left {
     grid-column: span 2;
     flex-direction: row;
     gap: 1rem;
     align-items: center;
   }
-  
+
   .service-item-title-wrap {
     padding-right: 0.5rem;
   }
-  
+
   .toggle-text {
     display: none;
   }
-  
+
   .services-guide-pill {
     font-size: 0.68rem;
     padding: 0.5rem 0.9rem;
@@ -1654,7 +1702,7 @@ ul, ol {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .portfolio-filter-tabs {
@@ -1948,7 +1996,7 @@ ul, ol {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 4rem;
+  margin-bottom: 2.5rem;
 }
 
 .testimonials-nav-controls {
@@ -2099,7 +2147,7 @@ ul, ol {
 
 .faq-header {
   text-align: center;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .faq-filter-tabs {
@@ -2218,8 +2266,9 @@ ul, ol {
    -------------------------------------------------------------------------- */
 .contact-section {
   background: radial-gradient(circle at 50% 10%, rgba(197, 168, 128, 0.08) 0%, transparent 70%),
-              var(--bg-primary);
+    var(--bg-primary);
   position: relative;
+  padding-bottom: clamp(2.5rem, 4vw, 3.5rem);
 }
 
 .contact-grid {
@@ -2384,7 +2433,7 @@ ul, ol {
 .footer {
   background-color: #060606;
   border-top: none;
-  padding: clamp(3.5rem, 6vw, 4.5rem) 0 2rem;
+  padding: clamp(2.5rem, 4vw, 3.5rem) 0 2rem;
   position: relative;
 }
 
@@ -2393,7 +2442,7 @@ ul, ol {
   grid-template-columns: 1.6fr 1fr 1.15fr 1fr;
   gap: clamp(2rem, 3.5vw, 3.25rem);
   align-items: start;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2.25rem;
 }
 
 .footer-col {
@@ -2489,7 +2538,7 @@ ul, ol {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 1.75rem;
+  padding-top: 1.5rem;
   border-top: 1px solid var(--border-subtle);
   flex-wrap: wrap;
   gap: 1.25rem;
@@ -2624,68 +2673,69 @@ ul, ol {
   :root {
     --nav-height: 76px;
   }
-  
+
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .portfolio-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
 }
 
 @media (max-width: 992px) {
+
   .nav-menu,
   .nav-actions .nav-cta-btn {
     display: none;
   }
-  
+
   .nav-toggle {
     display: flex;
   }
-  
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 3.5rem;
   }
-  
+
   .hero-visual-wrap {
     order: -1;
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 4rem;
   }
-  
+
   .about-images-composition {
     max-width: 520px;
     margin: 0 auto;
   }
-  
+
   .founder-grid {
     grid-template-columns: 1fr;
     gap: 4rem;
   }
-  
+
   .founder-image-wrapper {
     max-width: 480px;
     margin: 0 auto;
   }
-  
+
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 3.5rem;
   }
-  
+
   .testimonial-card {
     flex: 0 0 calc(50% - 1rem);
   }
-  
+
   .footer-top-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.75rem 2rem;
@@ -2694,52 +2744,52 @@ ul, ol {
 
 @media (max-width: 768px) {
   :root {
-    --section-padding: 4.5rem;
+    --section-padding: 3.25rem;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .portfolio-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .portfolio-item.wide,
   .portfolio-item.tall {
     grid-column: span 1;
     grid-row: span 1;
     min-height: 340px;
   }
-  
+
   .testimonial-card {
     flex: 0 0 100%;
     min-width: 100%;
   }
-  
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .hero-stats-bar {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
-  
+
   .about-pillars-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-top-grid {
     grid-template-columns: 1fr;
     gap: 2.25rem;
   }
-  
+
   .footer-desc {
     max-width: 100%;
   }
-  
+
   .footer-bottom-bar {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -2750,22 +2800,24 @@ ul, ol {
 
 /* Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  
+
   .custom-cursor,
   .custom-cursor-follower {
     display: none !important;
   }
-  
+
   .marquee-track,
   .text-ticker-track,
   .about-stamp {
     animation: none !important;
   }
 }
-

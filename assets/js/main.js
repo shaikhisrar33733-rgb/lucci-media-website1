@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.getElementById('preloader');
   const preloaderBar = document.getElementById('preloaderBar');
   const preloaderCount = document.getElementById('preloaderCount');
-  
+
   let progress = 0;
   const startTime = Date.now();
   const minLoadTime = 1200; // minimum 1.2s for luxurious brand impression
@@ -21,15 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const progressInterval = setInterval(() => {
     progress += Math.floor(Math.random() * 8) + 4;
     if (progress > 100) progress = 100;
-    
+
     if (preloaderBar) preloaderBar.style.width = `${progress}%`;
     if (preloaderCount) preloaderCount.textContent = `${progress}%`;
-    
+
     if (progress >= 100) {
       clearInterval(progressInterval);
       const elapsed = Date.now() - startTime;
       const remaining = Math.max(0, minLoadTime - elapsed);
-      
+
       setTimeout(() => {
         if (preloader) {
           preloader.classList.add('loaded');
@@ -236,11 +236,11 @@ document.addEventListener('DOMContentLoaded', () => {
           // Smooth spring-like lerping with natural offset
           previewX += (mouseX + 40 - previewX) * 0.15;
           previewY += (mouseY - 80 - previewY) * 0.15;
-          
+
           // Keep preview within viewport boundaries
           const clampedX = Math.min(window.innerWidth - 160, Math.max(160, previewX));
           const clampedY = Math.min(window.innerHeight - 200, Math.max(200, previewY));
-          
+
           serviceFloatingPreview.style.transform = `translate(${clampedX}px, ${clampedY}px)`;
         }
         requestAnimationFrame(renderPreviewPos);
@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       filterTabs.forEach((t) => t.classList.remove('is-active'));
       tab.classList.add('is-active');
-      
+
       const filter = tab.getAttribute('data-filter');
 
       portfolioItems.forEach((item) => {
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const img = item.querySelector('img');
       const title = item.querySelector('.portfolio-title')?.textContent || 'Lucci Media Showcase';
       const category = item.querySelector('.portfolio-cat')?.textContent || '';
-      
+
       if (img && lightboxModal && lightboxImg) {
         lightboxImg.src = img.src;
         lightboxImg.alt = img.alt || title;
@@ -440,7 +440,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.getElementById('prevTestimonial');
   const nextBtn = document.getElementById('nextTestimonial');
   const testDotsContainer = document.getElementById('testimonialsDots');
-  
+
   if (testimonialsTrack) {
     const testimonialCards = testimonialsTrack.querySelectorAll('.testimonial-card');
     let currentIndex = 0;
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!testDotsContainer) return;
       testDotsContainer.innerHTML = '';
       const totalDots = maxIndex() + 1;
-      
+
       for (let i = 0; i < totalDots; i++) {
         const dot = document.createElement('div');
         dot.classList.add('test-dot');
@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const goToSlide = (index) => {
       updateVisibleCardsCount();
       currentIndex = Math.max(0, Math.min(index, maxIndex()));
-      
+
       const card = testimonialCards[0];
       if (card) {
         cardWidth = card.offsetWidth;
@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', () => {
       isDragging = false;
       const endX = e.changedTouches[0].clientX;
       const diff = startX - endX;
-      
+
       if (diff > 50) {
         goToSlide(currentIndex + 1);
       } else if (diff < -50) {
