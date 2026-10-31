@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(renderCursor);
 
     // Interactive Hover States
-    const interactiveElements = document.querySelectorAll('a, button, input, select, textarea, .service-card, .portfolio-item, .faq-question-btn, .filter-tab');
+    const interactiveElements = document.querySelectorAll('a, button, input, select, textarea, .service-item-header, .service-inquire-btn, .service-card, .portfolio-item, .faq-question-btn, .filter-tab');
     interactiveElements.forEach((el) => {
       el.addEventListener('mouseenter', () => {
         cursorFollower.classList.add('is-hovering');
@@ -205,6 +205,153 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     setTimeout(typeLoop, 800);
+  }
+
+  /* --------------------------------------------------------------------------
+     5.5. SERVICES: TYPOGRAPHY, HOVER IMAGE REVEAL & CLICK-TO-OPEN ACCORDION
+     (Inspired by The Social Agency Design Pattern)
+     -------------------------------------------------------------------------- */
+  const servicesList = document.getElementById('servicesList');
+  const serviceItems = document.querySelectorAll('.service-editorial-item');
+  const serviceFloatingPreview = document.getElementById('serviceFloatingPreview');
+  const serviceFloatingPreviewImg = document.getElementById('serviceFloatingPreviewImg');
+  const serviceFloatingPreviewMeta = document.getElementById('serviceFloatingPreviewMeta');
+
+  if (servicesList && serviceItems.length > 0) {
+    let mouseX = -500;
+    let mouseY = -500;
+    let previewX = -500;
+    let previewY = -500;
+    let isHoveringServices = false;
+
+    // Floating Image Mouse Tracker (Desktop only)
+    if (serviceFloatingPreview && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      window.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+      }, { passive: true });
+
+      const renderPreviewPos = () => {
+        if (isHoveringServices) {
+          // Smooth spring-like lerping with natural offset
+          previewX += (mouseX + 40 - previewX) * 0.15;
+          previewY += (mouseY - 80 - previewY) * 0.15;
+          
+          // Keep preview within viewport boundaries
+          const clampedX = Math.min(window.innerWidth - 160, Math.max(160, previewX));
+          const clampedY = Math.min(window.innerHeight - 200, Math.max(200, previewY));
+          
+          serviceFloatingPreview.style.transform = `translate(${clampedX}px, ${clampedY}px)`;
+        }
+        requestAnimationFrame(renderPreviewPos);
+      };
+      requestAnimationFrame(renderPreviewPos);
+    }
+
+    // Hover Image Reveal on Service Items
+    serviceItems.forEach((item) => {
+      const header = item.querySelector('.service-item-header');
+      const panel = item.querySelector('.service-details-panel');
+      const serviceName = item.getAttribute('data-service') || 'Lucci Media Service';
+      const serviceImgSrc = item.getAttribute('data-image') || '';
+
+      // Hover Reveal
+      item.addEventListener('mouseenter', () => {
+        if (serviceFloatingPreview && serviceFloatingPreviewImg && !item.classList.contains('is-open')) {
+          serviceFloatingPreviewImg.src = serviceImgSrc;
+          serviceFloatingPreviewImg.alt = serviceName;
+          if (serviceFloatingPreviewMeta) {
+            serviceFloatingPreviewMeta.textContent = serviceName;
+          }
+          serviceFloatingPreview.classList.add('is-visible');
+          isHoveringServices = true;
+        }
+      });
+
+      item.addEventListener('mouseleave', () => {
+        if (serviceFloatingPreview) {
+          serviceFloatingPreview.classList.remove('is-visible');
+          isHoveringServices = false;
+        }
+      });
+
+      // Hide floating preview when mouse enters the expanded panel to allow smooth reading
+      panel?.addEventListener('mouseenter', () => {
+        if (serviceFloatingPreview) {
+          serviceFloatingPreview.classList.remove('is-visible');
+          isHoveringServices = false;
+        }
+      });
+
+      // Click to Open / Toggle Service Details (Accordion)
+      const toggleServiceDetails = () => {
+        const isOpen = item.classList.contains('is-open');
+
+        // Close floating hover preview immediately on click
+        if (serviceFloatingPreview) {
+          serviceFloatingPreview.classList.remove('is-visible');
+          isHoveringServices = false;
+        }
+
+        // Close other open service items for clean accordion UX
+        serviceItems.forEach((other) => {
+          if (other !== item && other.classList.contains('is-open')) {
+            other.classList.remove('is-open');
+            const otherHeader = other.querySelector('.service-item-header');
+            const otherPanel = other.querySelector('.service-details-panel');
+            if (otherHeader) otherHeader.setAttribute('aria-expanded', 'false');
+            if (otherPanel) {
+              otherPanel.style.maxHeight = null;
+              otherPanel.setAttribute('aria-hidden', 'true');
+            }
+          }
+        });
+
+        // Toggle current item
+        if (isOpen) {
+          item.classList.remove('is-open');
+          if (header) header.setAttribute('aria-expanded', 'false');
+          if (panel) {
+            panel.style.maxHeight = null;
+            panel.setAttribute('aria-hidden', 'true');
+          }
+        } else {
+          item.classList.add('is-open');
+          if (header) header.setAttribute('aria-expanded', 'true');
+          if (panel) {
+            panel.style.maxHeight = `${panel.scrollHeight}px`;
+            panel.setAttribute('aria-hidden', 'false');
+          }
+        }
+      };
+
+      header?.addEventListener('click', toggleServiceDetails);
+
+      // Keyboard accessibility (Enter / Space)
+      header?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggleServiceDetails();
+        }
+      });
+    });
+
+    // Handle "Inquire This Service" CTA Buttons inside details
+    document.querySelectorAll('.service-inquire-btn').forEach((btn) => {
+      btn.addEventListener('click', function (e) {
+        const chosenService = this.getAttribute('data-service-name');
+        const serviceSelect = document.getElementById('service');
+        if (serviceSelect && chosenService) {
+          // Pre-select service in contact form
+          for (let i = 0; i < serviceSelect.options.length; i++) {
+            if (serviceSelect.options[i].value === chosenService || serviceSelect.options[i].text.includes(chosenService)) {
+              serviceSelect.selectedIndex = i;
+              break;
+            }
+          }
+        }
+      });
+    });
   }
 
   /* --------------------------------------------------------------------------
@@ -620,17 +767,17 @@ document.addEventListener('DOMContentLoaded', () => {
           });
         });
 
-        // Service cards stagger
-        gsap.utils.toArray('.services-grid').forEach((grid) => {
-          gsap.from(grid.children, {
+        // Service items staggered reveal
+        gsap.utils.toArray('.services-editorial-list').forEach((list) => {
+          gsap.from(list.children, {
             scrollTrigger: {
-              trigger: grid,
+              trigger: list,
               start: 'top 82%',
               toggleActions: 'play none none none'
             },
             opacity: 0,
-            y: 40,
-            stagger: 0.12,
+            y: 30,
+            stagger: 0.08,
             duration: 0.8,
             ease: 'power3.out'
           });
@@ -679,7 +826,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       // Fallback: IntersectionObserver for smooth scroll reveals
-      const revealElements = document.querySelectorAll('.service-card, .portfolio-item, .pillar-item, .contact-channel-card');
+      const revealElements = document.querySelectorAll('.service-item-header, .service-inquire-btn, .service-card, .portfolio-item, .pillar-item, .contact-channel-card');
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {

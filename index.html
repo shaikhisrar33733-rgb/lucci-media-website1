@@ -379,412 +379,640 @@
     </section>
 
     <!-- ==========================================================================
-         SECTION 5: SIGNATURE SERVICES
+         SECTION 5: SIGNATURE SERVICES (REDESIGNED: TYPOGRAPHY SCROLLING + HOVER REVEAL + CLICK DETAILS)
          ========================================================================== -->
     <section class="section services-section" id="services">
-      <div class="container">
-        
-        <div class="services-header">
-          <div class="services-header-left">
-            <div class="section-tag">
-              <span class="section-tag-dot"></span>
-              <span>Our Signature Services</span>
-            </div>
-            <h2 class="heading-lg">
-              Engineered For Impact. Crafted For Scale.
-            </h2>
+      
+      <!-- Section Header -->
+      <div class="container services-header">
+        <div class="services-header-left">
+          <div class="section-tag">
+            <span class="section-tag-dot"></span>
+            <span>Our Signature Services</span>
           </div>
-          <div class="services-header-right">
-            <span class="text-muted" style="font-family: var(--font-mono); font-size: 0.85rem;">[ 09 SERVICES OFFERED ]</span>
+          <h2 class="heading-lg services-main-heading">
+            Engineered For Impact.<br>Crafted For Scale.
+          </h2>
+        </div>
+        <div class="services-header-right">
+          <div class="services-guide-pill">
+            <span class="pill-dot"></span>
+            <span>09 SERVICES • HOVER TO PREVIEW • CLICK TO OPEN DETAILS</span>
           </div>
         </div>
+      </div>
 
-        <!-- 9 Authentic Services Grid -->
-        <div class="services-grid">
+      <!-- Continuous Typography Scrolling Banner (Inspired by The Social Agency) -->
+      <div class="services-typography-marquee" aria-hidden="true">
+        <div class="services-marquee-track">
+          <span class="marquee-item">SOCIAL MEDIA MANAGEMENT</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">CONTENT DAYS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">BRANDING SHOOTS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">CAMPAIGN SHOOTS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">TRENDING REELS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">BRAND KITS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">CONTENT STRATEGY</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">BUSINESS CONSULTING</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">WEB DESIGN &amp; GRAPHICS</span>
+          <span class="marquee-star">✦</span>
+        </div>
+        <div class="services-marquee-track" aria-hidden="true">
+          <span class="marquee-item">SOCIAL MEDIA MANAGEMENT</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">CONTENT DAYS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">BRANDING SHOOTS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">CAMPAIGN SHOOTS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">TRENDING REELS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">BRAND KITS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">CONTENT STRATEGY</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item outline-text">BUSINESS CONSULTING</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">WEB DESIGN &amp; GRAPHICS</span>
+          <span class="marquee-star">✦</span>
+        </div>
+      </div>
+
+      <!-- Editorial Interactive Services List -->
+      <div class="container services-container">
+        <div class="services-editorial-list" id="servicesList">
 
           <!-- Service 1: Social Media Management -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 01 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          <div class="service-editorial-item" data-service="Social Media Management" data-image="assets/images/photo_apr_01_2026_12_20_03_pm.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-1">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 01 ]</span>
+                <span class="service-item-category">Full-Service Growth</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Social Media Management</h3>
+                <span class="service-item-subtitle">Full-service day-to-day management so you focus on scaling your business</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Social Media Management</h3>
-              <p class="service-card-desc">Let us handle the day-to-day while you focus on your business! Complete management tailored for high-ticket growth.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Content creation & scheduling</span>
+            </div>
+            
+            <!-- Click-to-Open Service Details Panel -->
+            <div class="service-details-panel" id="service-details-1" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Let us handle the day-to-day while you focus on your business! Our full-service management is engineered to scale reach, foster vibrant community engagement, and transform passive followers into high-ticket clients.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Content creation &amp; scheduling</li>
+                      <li><span class="deliverable-bullet">✦</span> Captions with SEO optimization</li>
+                      <li><span class="deliverable-bullet">✦</span> Engagement &amp; community building</li>
+                      <li><span class="deliverable-bullet">✦</span> Feed design &amp; planning</li>
+                      <li><span class="deliverable-bullet">✦</span> Monthly analytics &amp; performance reports</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Social Media Management">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Captions with SEO optimization</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Engagement & community building</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Feed design & planning</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Monthly analytics & performance reports</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo_apr_01_2026_12_20_03_pm.jpg" alt="Social Media Management by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 01 ] Full Management</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 2: Content Days -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 02 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                    <circle cx="12" cy="13" r="4"></circle>
+          <div class="service-editorial-item" data-service="Content Days" data-image="assets/images/photo_apr_01_2026_12_45_51_pm.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-2">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 02 ]</span>
+                <span class="service-item-category">Production &amp; Studio</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Content Days</h3>
+                <span class="service-item-subtitle">High-quality batch photo &amp; video days tailored to keep your feed engaging</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Content Days</h3>
-              <p class="service-card-desc">Bring your brand to life with professional, high-quality content. Perfect for creating fresh visuals to keep your feed engaging.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Customized shot lists tailored to your brand</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-2" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Bring your brand to life with professional, high-quality content. Perfect for creating fresh visuals to keep your feed engaging and active without the stress of daily filming.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Customized shot lists tailored to your brand</li>
+                      <li><span class="deliverable-bullet">✦</span> High-resolution photos and/or videos</li>
+                      <li><span class="deliverable-bullet">✦</span> Full-service editing &amp; delivery</li>
+                      <li><span class="deliverable-bullet">✦</span> Includes product and service-focused content</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Content Days">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>High-resolution photos and/or videos</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Full-service editing & delivery</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Includes product and service-focused content</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo_apr_01_2026_12_45_51_pm.jpg" alt="Content Days with Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 02 ] Production Days</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 3: Branding Shoots -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 03 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          <div class="service-editorial-item" data-service="Branding Shoots" data-image="assets/images/bd7b331e-8e1a-4b15-8a8e-b437a623bde6.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-3">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 03 ]</span>
+                <span class="service-item-category">Executive Identity</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Branding Shoots</h3>
+                <span class="service-item-subtitle">Bold, professional imagery for personal branding, rebranding, and founder prestige</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Branding Shoots</h3>
-              <p class="service-card-desc">Your brand deserves a bold, professional image. Perfect for personal branding, rebranding, or creating executive content for your business.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Professional photography tailored to aesthetic</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-3" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Your brand deserves a bold, professional image. Perfect for personal branding, rebranding, or creating professional content for your business that establishes instant authority and trust.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Professional photography tailored to your brand’s aesthetic</li>
+                      <li><span class="deliverable-bullet">✦</span> Studio or on-location options in Boston &amp; beyond</li>
+                      <li><span class="deliverable-bullet">✦</span> Posing guidance, angle coaching &amp; confidence support</li>
+                      <li><span class="deliverable-bullet">✦</span> Hundreds of delivered high-resolution assets for lifetime use</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Branding Shoots">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Studio or on-location options in Boston & beyond</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Posing guidance & high-confidence coaching</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Hundreds of delivered assets for lifetime use</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/bd7b331e-8e1a-4b15-8a8e-b437a623bde6.jpg" alt="Branding Shoots by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 03 ] Signature Branding</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 4: Campaign Shoots -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 04 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <polygon points="10 8 16 12 10 16 10 8"></polygon>
+          <div class="service-editorial-item" data-service="Campaign Shoots" data-image="assets/images/img_8963.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-4">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 04 ]</span>
+                <span class="service-item-category">Editorial &amp; Launches</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Campaign Shoots</h3>
+                <span class="service-item-subtitle">High-impact story-driven visuals designed for product drops, seasons, and VIP events</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Campaign Shoots</h3>
-              <p class="service-card-desc">Capture your brand’s story with stunning visuals that stand out. Tailored concepts for product launches, seasonal collections, or VIP events.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Professional photography and/or videography</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-4" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Capture your brand’s story with stunning visuals that stand out. Tailored concepts for product launches, branding campaigns, or events that drive excitement, prestige, and immediate conversions.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Professional photography and/or videography</li>
+                      <li><span class="deliverable-bullet">✦</span> Studio or on-location production</li>
+                      <li><span class="deliverable-bullet">✦</span> Tailored concepts for product launches, branding campaigns, or events</li>
+                      <li><span class="deliverable-bullet">✦</span> Commercial usage rights &amp; high-end color grading</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Campaign Shoots">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Studio or on-location production</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Tailored concepts for product launches</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Commercial usage rights & full edits</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/img_8963.jpg" alt="Campaign Shoots by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 04 ] High Production</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 5: Trending Socials Package -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 05 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
-                    <polyline points="17 6 23 6 23 12"></polyline>
+          <div class="service-editorial-item" data-service="Trending Socials Package" data-image="assets/images/photo-2026-04-08-14-48-56.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-5">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 05 ]</span>
+                <span class="service-item-category">Algorithm &amp; Reels</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Trending Socials Package</h3>
+                <span class="service-item-subtitle">High-converting viral reels crafted with trending audio, scripts &amp; seamless edits</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Trending Socials Package</h3>
-              <p class="service-card-desc">Stay ahead of the curve with our Trending Socials Package. Perfect for businesses wanting to tap into the latest trends without the stress!</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>5-12 reels tailored to your niche</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-5" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Stay ahead of the curve with our Trending Socials Package. Perfect for businesses wanting to tap into the latest trends without the stress! We handle research, trending audio, scripts, and editing.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> 5-12 reels tailored to your niche</li>
+                      <li><span class="deliverable-bullet">✦</span> Script writing &amp; trending audio integration</li>
+                      <li><span class="deliverable-bullet">✦</span> Engaging captions &amp; hashtags</li>
+                      <li><span class="deliverable-bullet">✦</span> Delivered fully edited and ready to post</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Trending Socials Package">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Script writing & trending audio integration</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Engaging captions & hashtags</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Delivered fully edited and ready to post</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo-2026-04-08-14-48-56.jpg" alt="Trending Socials Package by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 05 ] Viral Content</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 6: Brand Kits -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 06 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                    <path d="M2 2l7.586 7.586"></path>
-                    <circle cx="11" cy="11" r="2"></circle>
+          <div class="service-editorial-item" data-service="Brand Kits" data-image="assets/images/img_0743.png">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-6">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 06 ]</span>
+                <span class="service-item-category">Visual Identity</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Brand Kits</h3>
+                <span class="service-item-subtitle">Complete identity suites: primary &amp; secondary logos, palettes, typography &amp; guidelines</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Brand Kits</h3>
-              <p class="service-card-desc">Set the foundation for a cohesive and professional brand identity with our customized brand kits.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Logo design (primary and secondary)</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-6" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Set the foundation for a cohesive and professional brand identity with our customized brand kits. Designed to position your brand as an industry leader with undeniable aesthetic appeal.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Logo design (primary and secondary)</li>
+                      <li><span class="deliverable-bullet">✦</span> Color palette and font selection</li>
+                      <li><span class="deliverable-bullet">✦</span> Brand guidelines for consistent visuals and messaging</li>
+                      <li><span class="deliverable-bullet">✦</span> Social media asset suite &amp; brand templates</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Brand Kits">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Color palette and typography curation</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Brand guidelines for consistent messaging</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Social media asset suite & templates</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/img_0743.png" alt="Brand Kits by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 06 ] Identity Design</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 7: Content Strategy -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 07 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="2"></circle>
-                    <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+          <div class="service-editorial-item" data-service="Content Strategy" data-image="assets/images/photo_apr_01_2026_11_45_44_am.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-7">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 07 ]</span>
+                <span class="service-item-category">Positioning &amp; Roadmap</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Content Strategy</h3>
+                <span class="service-item-subtitle">Clear, high-converting direction and positioning so you’re never just posting to post</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Content Strategy</h3>
-              <p class="service-card-desc">Let’s build a clear plan behind your content so you’re not just posting to post. Engineered for conversion and authority.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Brand and offer positioning</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-7" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Let’s build a clear plan behind your content so you’re not just posting to post. We engineer a bespoke roadmap of messaging, feed architecture, and high-conversion content pillars.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Brand and offer positioning</li>
+                      <li><span class="deliverable-bullet">✦</span> Content pillars tailored to your business</li>
+                      <li><span class="deliverable-bullet">✦</span> Custom content ideas and direction • Feed direction + messaging guidance</li>
+                      <li><span class="deliverable-bullet">✦</span> Growth and engagement recommendations</li>
+                      <li><span class="deliverable-bullet">✦</span> Action steps designed to help you convert</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Content Strategy">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Content pillars tailored to your business</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Feed direction + messaging guidance</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Growth and engagement recommendations</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Action steps designed to help you convert</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo_apr_01_2026_11_45_44_am.jpg" alt="Content Strategy by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 07 ] Strategic Roadmap</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
           <!-- Service 8: Business Consulting -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 08 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="12" y1="1" x2="12" y2="23"></line>
-                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          <div class="service-editorial-item" data-service="Business Consulting" data-image="assets/images/photo_feb_09_2026_12_28_36_pm.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-8">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 08 ]</span>
+                <span class="service-item-category">1-on-1 Advisory</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Business Consulting</h3>
+                <span class="service-item-subtitle">1-on-1 personalized advisory with Lex Luciano to scale your reach and book high-ticket clients</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Business Consulting</h3>
-              <p class="service-card-desc">Ready to level up your strategy? Get personalized 1-on-1 advice from Lex Luciano to grow your brand online.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Instagram & TikTok audits</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-8" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Ready to level up your strategy? Get personalized 1-on-1 advice directly from Lex Luciano to audit your social channels, refine your offers, and unlock next-level industry scale.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Instagram &amp; TikTok audits</li>
+                      <li><span class="deliverable-bullet">✦</span> Growth strategies for social media</li>
+                      <li><span class="deliverable-bullet">✦</span> Branding &amp; content planning guidance</li>
+                      <li><span class="deliverable-bullet">✦</span> Expert tips to attract high-ticket clients</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Business Consulting">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Growth strategies for social media</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Branding & content planning guidance</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Expert tips to attract high-ticket clients</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo_feb_09_2026_12_28_36_pm.jpg" alt="Business Consulting with Lex Luciano" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 08 ] Executive Mentorship</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
-          <!-- Service 9: Web Design & Graphics -->
-          <div class="service-card">
-            <div>
-              <div class="service-card-top">
-                <span class="service-index">[ 09 ]</span>
-                <div class="service-icon-box">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                    <line x1="8" y1="21" x2="16" y2="21"></line>
-                    <line x1="12" y1="17" x2="12" y2="21"></line>
+          <!-- Service 9: Web Design & Graphic Design -->
+          <div class="service-editorial-item" data-service="Web Design & Graphics" data-image="assets/images/photo_may_27_2025_7_39_34_pm_1.jpg">
+            <div class="service-item-header" role="button" tabindex="0" aria-expanded="false" aria-controls="service-details-9">
+              <div class="service-item-left">
+                <span class="service-item-index">[ 09 ]</span>
+                <span class="service-item-category">Digital &amp; Collateral</span>
+              </div>
+              <div class="service-item-title-wrap">
+                <h3 class="service-item-title">Web Design &amp; Graphics</h3>
+                <span class="service-item-subtitle">Sleek, user-friendly digital storefronts and graphic collateral built to convert</span>
+              </div>
+              <div class="service-item-toggle">
+                <span class="toggle-text">Explore</span>
+                <div class="toggle-icon-wrap">
+                  <svg class="toggle-plus-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
                   </svg>
                 </div>
               </div>
-              <h3 class="service-card-title">Web Design & Graphics</h3>
-              <p class="service-card-desc">Your digital storefront should be as stunning as your business! Sleek, user-friendly websites and graphic assets optimized for conversions.</p>
-              <div class="service-features-list">
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Custom web design tailored to your branding</span>
+            </div>
+            
+            <div class="service-details-panel" id="service-details-9" aria-hidden="true">
+              <div class="service-details-inner">
+                <div class="service-details-col-text">
+                  <p class="service-details-lead">
+                    Your digital storefront should be as stunning as your business! We design sleek, user-friendly websites that are optimized for your audience, alongside elevated graphic assets for campaigns and events.
+                  </p>
+                  <div class="service-deliverables-box">
+                    <h4 class="service-deliverables-heading">What We Deliver:</h4>
+                    <ul class="service-deliverables-list">
+                      <li><span class="deliverable-bullet">✦</span> Custom design tailored to your branding</li>
+                      <li><span class="deliverable-bullet">✦</span> Mobile optimization &amp; e-commerce options available</li>
+                      <li><span class="deliverable-bullet">✦</span> Includes 1-on-1 review and revisions</li>
+                      <li><span class="deliverable-bullet">✦</span> Logos, social media flyers, business cards &amp; custom materials</li>
+                    </ul>
+                  </div>
+                  <div class="service-actions-row">
+                    <a href="#contact" class="btn btn-gold service-inquire-btn" data-service-name="Web Design & Graphics">
+                      <span>Inquire This Service</span>
+                      <span class="btn-icon">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                      </span>
+                    </a>
+                    <a href="#work" class="btn btn-outline">
+                      <span>View Related Work</span>
+                    </a>
+                  </div>
                 </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Mobile optimization & e-commerce setup</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>1-on-1 review and revisions included</span>
-                </div>
-                <div class="service-feature-item">
-                  <span class="service-feature-bullet">✦</span>
-                  <span>Social flyers, business cards & campaign graphics</span>
+                <div class="service-details-col-visual">
+                  <div class="service-detail-image-card">
+                    <img src="assets/images/photo_may_27_2025_7_39_34_pm_1.jpg" alt="Web Design & Graphics by Lucci Media" loading="lazy">
+                    <div class="service-visual-badge">
+                      <span>[ 09 ] Digital Experience</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="service-card-footer">
-              <a href="#contact" class="service-card-link">
-                <span>Inquire Service</span>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
-              </a>
             </div>
           </div>
 
         </div>
-
       </div>
+
+      <!-- Floating Hover Image Preview (Follows Cursor on Service Item Hover) -->
+      <div class="service-floating-preview" id="serviceFloatingPreview" aria-hidden="true">
+        <div class="service-floating-preview-inner">
+          <img src="assets/images/photo_apr_01_2026_12_20_03_pm.jpg" alt="Lucci Media Service Preview" id="serviceFloatingPreviewImg">
+          <div class="service-floating-preview-meta" id="serviceFloatingPreviewMeta">Lucci Media Signature</div>
+        </div>
+      </div>
+
     </section>
 
     <!-- ==========================================================================
